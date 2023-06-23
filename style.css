@@ -1,0 +1,76 @@
+:root {
+  --background: #f7f3f2;
+  --background-opacity: rgba(228, 221, 220, 0.77);
+  --background-card: #f0e6e4;
+
+  --primary: #8e7c68;
+  --secondary: #e0c0b8;
+  --tertiary: #f0ddd9;
+
+  --hover-button: #706354;
+
+  --success: #2dd36f;
+  --warning: #ffc409;
+  --danger: #eb445a;
+
+  --dark: #222428;
+  --medium: #92949c;
+  --text-color: #8e7c8e;
+  --light: #fff;
+}
+
+html,
+body {
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.logo {
+  max-height: 5rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--background-card);
+  color: var(--primary);
+  border-color: transparent;
+}
+
+footer {
+  font-size: 0.8rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.disabled {
+  opacity: 0.4;
+}
